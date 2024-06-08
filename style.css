@@ -23,6 +23,7 @@
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 input {
@@ -55,8 +56,20 @@ button {
 }
 
 @media screen and (max-width: 500px) {
-    #pertanyaan {
-        font-size: 20px;
-        font-weight: 800;
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
